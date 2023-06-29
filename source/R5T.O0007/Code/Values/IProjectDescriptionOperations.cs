@@ -36,5 +36,13 @@ namespace R5T.O0007
 
             return output;
         }
+
+        public IProjectDescription Get_WebLibraryProjectDescription(IProjectName baseProjectName)
+        {
+            var output = $"Server for the {baseProjectName} Blazor client."
+                .ToProjectDescription();
+
+            return output;
+        }
     }
 }
